@@ -1,0 +1,25 @@
+name: Auto Commit
+
+on:
+  schedule:
+    - cron: '30 15 * * *'  # Runs every day at midnight UTC
+
+jobs:
+  auto_commit:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Git user
+        run: |
+          git config user.name "WHOISrojal"
+          git config user.email "rojal2002@gmail.com"
+
+      - name: Auto commit
+        run: |
+          echo "Auto-generated content" >> rose.txt 
+          git add .
+          git commit -m "Commiting as a daily work"
+          git push origin master
