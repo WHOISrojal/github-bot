@@ -3,12 +3,11 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '30 15 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
-      timezone: Asia/Kathmandu  # Set the appropriate timezone
+    - cron: '55 15 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
 
 jobs:
   auto_commit:
-    runs-on: windows-latest # Use the window environment
+    runs-on: ubuntu-latest # Use the window environment
 
     steps:
       - name: Check out code
