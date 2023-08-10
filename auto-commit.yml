@@ -3,7 +3,8 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '45 14 * *'  # Runs every day at 8:45 pm GMT
+    - cron: '15 15 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
+    timezone: Asia/Kathmandu  # Set the appropriate timezone
 
 jobs:
   auto_commit:
