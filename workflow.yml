@@ -1,9 +1,9 @@
-# I created this bot to help me automate the commits daily.... without any user intervention. Keep Coding... Bye Bye
+# I created this bot to help me automate the commits daily without any user intervention. Keep Coding... Bye Bye
 name: Auto Commit
 
 on:
   schedule:
-    - cron: '30 15 * * *'  # Runs every day at midnight UTC
+    - cron: '30 14 * * *'  # Runs at 2:30 pm UTC | 8:15 pm GMT
 
 jobs:
   auto_commit:
