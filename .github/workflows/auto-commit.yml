@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '5 16 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
+    - cron: '15 16 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
 
 jobs:
   auto_commit:
