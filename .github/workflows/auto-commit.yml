@@ -3,11 +3,11 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '55 15 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
+    - cron: '5 16 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
 
 jobs:
   auto_commit:
-    runs-on: ubuntu-latest # Use the window environment
+    runs-on: ubuntu-latest 
 
     steps:
       - name: Check out code
