@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '30 14 * * *'  # Runs at 2:30 pm UTC | 8:15 pm GMT
+    - cron: '25 20 * * *'  # Runs at 2:30 pm UTC | 8:15 pm GMT
 
 jobs:
   auto_commit:
