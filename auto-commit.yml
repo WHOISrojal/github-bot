@@ -3,11 +3,11 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '25 20 * * *'  # Runs at 2:30 pm UTC | 8:15 pm GMT
+    - cron: '45 14 * *'  # Runs every day at 8:45 pm GMT
 
 jobs:
   auto_commit:
-    runs-on: windows-latest
+    runs-on: windows-latest # Use the window environment
 
     steps:
       - name: Check out code
