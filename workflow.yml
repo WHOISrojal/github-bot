@@ -23,4 +23,4 @@ jobs:
           echo "Auto-generated content" >> rose.txt 
           git add .
           git commit -m "Commiting as a daily work"
-          git push origin master
+          git push origin main
