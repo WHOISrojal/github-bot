@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '15 16 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
+    - cron: '28 16 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
 
 jobs:
   auto_commit:
@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+        
+      - name: Navigate to Repository Directory
+        run: |
+          cd github-bot  # Replace with the actual path
 
       - name: Set up Git user
         run: |
