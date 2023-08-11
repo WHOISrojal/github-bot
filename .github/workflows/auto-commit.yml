@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '10 8 * * *'  # Runs at specific time based on (UTC)
+    - cron: '40 8 * * *'  # Runs at specific time based on (UTC)
 
 jobs:
   auto_commit:
@@ -13,6 +13,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
         with:
+          repository: WHOISrojal/github-bot
           ref: main
         
       - name: Navigate to Repository Directory
