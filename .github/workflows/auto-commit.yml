@@ -13,7 +13,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
         with:
-          ref: v2
+          ref: main
         
       - name: Navigate to Repository Directory
         run: |
