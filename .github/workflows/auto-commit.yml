@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '40 8 * * *'  # Runs at specific time based on (UTC)
+    - cron: '10 8 * * *'  # Runs at specific time based on (UTC)
 
 jobs:
   auto_commit:
