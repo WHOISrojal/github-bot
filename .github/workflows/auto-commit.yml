@@ -3,7 +3,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '10 8 * * *'  # Runs every day at 9:15 pm Nepal Time (GMT+5:45)
+    - cron: '10 8 * * *'  # Runs at specific time based on (UTC)
 
 jobs:
   auto_commit:
@@ -17,7 +17,7 @@ jobs:
         
       - name: Navigate to Repository Directory
         run: |
-          cd $GITHUB_WORKSPACE  # Replace with the actual path
+          cd github-bot/.github/workflows/auto-commit.yml
 
       - name: Set up Git user
         run: |
