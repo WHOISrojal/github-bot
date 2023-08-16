@@ -1,39 +1,39 @@
-# I created this bot to help me automate the commits daily without any user intervention. Keep Coding... Bye Bye
-# Not Working as expected... 
-name: Auto Commit
+# # I created this bot to help me automate the commits daily without any user intervention. Keep Coding... Bye Bye
+# # Not Working as expected... 
+# name: Auto Commit
 
-on:
-  schedule:
-    - cron: '40 8 * * *'  # Runs at specific time based on (UTC)
+# on:
+#   schedule:
+#     - cron: '40 8 * * *'  # Runs at specific time based on (UTC)
 
-jobs:
-  auto_commit:
-    runs-on: ubuntu-latest 
+# jobs:
+#   auto_commit:
+#     runs-on: ubuntu-latest 
 
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-        with:
-          repository: WHOISrojal/github-bot
-          ref: main
+#     steps:
+#       - name: Check out code
+#         uses: actions/checkout@v2
+#         with:
+#           repository: WHOISrojal/github-bot
+#           ref: main
         
-      - name: Navigate to Repository Directory
-        run: |
-          cd github-bot/.github/workflows/auto-commit.yml
+#       - name: Navigate to Repository Directory
+#         run: |
+#           cd github-bot/.github/workflows/auto-commit.yml
 
-      - name: Set up Git user
-        run: |
-          git config user.name "WHOISrojal"
-          git config user.email "rojal2002@gmail.com"
+#       - name: Set up Git user
+#         run: |
+#           git config user.name "WHOISrojal"
+#           git config user.email "rojal2002@gmail.com"
           
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
+#       - name: Use Node.js 16
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: 16
 
-      - name: Auto commit
-        run: |
-          echo "Auto-generated content" >> rose.txt 
-          git add .
-          git commit -m "Commiting as a daily work"
-          git push origin main
+#       - name: Auto commit
+#         run: |
+#           echo "Auto-generated content" >> rose.txt 
+#           git add .
+#           git commit -m "Commiting as a daily work"
+#           git push origin main
